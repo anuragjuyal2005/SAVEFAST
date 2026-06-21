@@ -30,7 +30,7 @@ const FileCard = ({ file, openModal }) => {
 
       <div className="flex justify-between items-center w-30 mr-1">
         <a
-          href={`http://localhost:5000/api/files/download/${file._id}`}
+          href={`https://savefast-backend-4go7.onrender.com/api/files/download/${file._id}`}
           className="text-indigo-700 cursor-pointer  border-2 border-indigo-300 p-3 rounded-full hover:border-indigo-500 hover:text-indigo-900"
         >
           <Download className="w-5 h-5" />
