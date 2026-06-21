@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/files";
+const API = "https://savefast-backend-4go7.onrender.com/api/files";
 
 export const uploadFile = async (formData) => {
   const res = await axios.post(`${API}/upload`, formData, {
