@@ -25,7 +25,9 @@ export const uploadFile = async (req, res) => {
 
     const result = await new Promise((resolve, reject) => {
       const stream = cloudinary.uploader.upload_stream(
-        { resource_type: mimetype === "application/pdf" ? "raw" : "image" },
+        {
+          resource_type: mimetype === "application/pdf" ? "raw" : "image",
+        },
         (error, result) => {
           if (error) reject(error);
           else resolve(result);
